@@ -16,6 +16,8 @@ jobs:
         with:
           bump_version_scheme: patch
           tag_prefix: v
+      - name: Wait
+        run: sleep 10s
       - uses: actions/checkout@v7
       - uses: haya14busa/action-update-semver@v1.5.1
         with:
